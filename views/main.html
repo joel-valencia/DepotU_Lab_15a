@@ -1,1 +1,22 @@
 main view
+
+<h4>objective 1</h4>
+<button ng-click="doAlert()">click for nice message</button>
+
+<h4>objective 2</h4>
+<input ng-model="message" type="text"><button ng-click="customMessage()">custom message</button>
+
+<h4>objective 3</h4>
+<div ng-style="bgStyle" ng-mouseenter="changeBackground()" ng-mouseleave="resetBackground()" id="objective3">This is a div that changes to a red background on hover.</div>
+
+<h4>objective 4</h4>
+<p ng-style="paragraphStyle" ng-click="changeParagraphColor()" id="objective4">This is a paragraph that changes to a random color when you click on it.</p>
+
+<h5>objective 5</h5>
+<button ng-click="addName()">add me</button><div><span>{{ spanContent }}</span></div>
+
+<h6>objective 6</h6>
+<button ng-click="populateFriends()">add friends</button>
+<ul>
+    <li ng-repeat="friend in friends">{{ friend }}</li>
+</ul>
